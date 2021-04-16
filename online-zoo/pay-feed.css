@@ -1,0 +1,232 @@
+.pay-feed {
+  
+ }
+ 
+.container__pay-feed {
+  width: 1688px;
+  margin: 0 auto;
+  padding: 100px 0 100px 128px;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 1918px) {
+  .container__pay-feed {
+    width: 1120px;    
+    padding: 100px 0 100px 144px;    
+  }
+}
+@media (max-width: 1200px) {
+  .container__pay-feed {
+    width: 640px;
+    margin: 0 auto;
+    padding: 80px 20px 100px 20px;    
+  }
+}
+@media (max-width: 640px) {
+  .container__pay-feed {
+    width: 300px;    
+    padding: 60px 0;
+  }
+}
+.section-header__pay-feed {
+  margin: 0 0 30px 184px;
+}
+@media (max-width: 1918px) {
+  .section-header__pay-feed {
+    margin: 0 0 80px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-header__pay-feed {
+    margin: 0 0 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__items {
+    margin: 0 auto;
+  }
+}
+.pay-feed__item-row {
+  display: flex;
+  width: 824px;  
+}
+@media (max-width: 1918px) {
+  .pay-feed__item-row {    
+    width: 725px;  
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__item-row {    
+    width: 456px;
+    flex-direction: column;
+    align-items: center;    
+  }
+}
+@media (max-width: 640px) {
+  .pay-feed__item-row {    
+    width: 300px;    
+  }
+}
+@media (max-width: 1918px) {
+  .pay-feed__img {
+    width: 242px;
+    height: 242px;
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__img {
+    width: 180px;
+    height: 180px;
+    order: 1;
+  }
+}
+.pay-feed__text {
+  margin: 0 0 0 56px;
+}
+@media (max-width: 1918px) {
+  .pay-feed__text {
+    margin: 0 0 0 45px;
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__text {
+    margin: 0 0 0 0;
+    order: 2;
+    text-align: center;
+    width: 428px;
+  }
+}
+@media (max-width: 640px) {
+  .pay-feed__text { 
+    width: 300px;
+  }
+}
+.section_description {}
+.section_postscription {}
+.pay-feed__pay {
+  margin: 0 0 60px 184px;
+}
+@media (max-width: 1918px) {
+  .pay-feed__pay {
+    margin: 0 0 90px 144px;    
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__pay {
+    margin: 60px auto 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .pay-feed__pay {
+    margin: 30px auto 0 auto;
+  }
+}
+.pay-feed__delivery {
+  margin: 0 0 47px 736px;
+}
+@media (max-width: 1918px) {
+  .pay-feed__delivery {
+    margin: 0 0 90px 144px;
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__delivery {
+    margin: 60px auto 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .pay-feed__delivery {
+    margin: 40px auto 0 auto;
+  }
+}
+.pay-feed__feed {}
+@media (max-width: 1918px) {
+  .pay-feed__feed {
+    margin: 0 0 0 144px;
+  }
+}
+@media (max-width: 1200px) {
+  .pay-feed__feed {
+    margin: 60px auto 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .pay-feed__feed {
+    margin: 40px auto 0 auto;
+  }
+}
+.pay-feed_arrow {
+  position: absolute;
+}
+.pay-feed_arrow-top {
+  bottom: 785px;
+  left: 785px;
+}
+@media (max-width: 1918px) {
+  .pay-feed_arrow-top {
+    display: none;
+  }
+}
+.pay-feed_arrow-bottom {
+  bottom: 427px;
+  left: 595px;
+}
+@media (max-width: 1918px) {
+  .pay-feed_arrow-bottom {
+    display: none;
+  }
+}
+.section_description_pay {
+  margin: 55px 0 30px 0;
+}
+@media (max-width: 1918px) {
+  .section_description_pay {
+    margin: 53px 0 20px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .section_description_pay {
+    margin: 30px 0 25px 0;
+  }
+}
+@media (max-width: 640px) {
+  .section_description_pay {
+    margin: 30px 0 20px 0;
+  }
+}
+.section_description__delivery {
+  margin: 104px 0 30px 0;
+}
+@media (max-width: 1918px) {
+  .section_description__delivery {
+    margin: 53px 0 20px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .section_description__delivery {
+    margin: 30px 0 25px 0;
+  }
+}
+@media (max-width: 640px) {
+  .section_description__delivery {
+    margin: 30px 0 20px 0;
+  }
+}
+.section_description__feed {
+  margin: 41px 0 30px 0;
+}
+@media (max-width: 1918px) {
+  .section_description__feed {
+    margin: 32px 0 20px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .section_description__feed {
+    margin: 30px 0 25px 0;
+  }
+}
+@media (max-width: 640px) {
+  .section_description__feed {
+    margin: 30px 0 20px 0;
+  }
+}

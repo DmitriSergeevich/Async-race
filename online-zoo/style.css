@@ -43,22 +43,19 @@ ul {
 }
 @media (max-width: 1918px) {
   .container {
-    width: 1120px;
-    margin: 0 auto;
+    width: 1120px;    
     padding: 0 0 0 144px;
   }
 }
 @media (max-width: 1200px) {
   .container {
-    width: 640px;
-    margin: 0 auto;
+    width: 640px;    
     padding: 0 20px 0 20px;
   }
 }
 @media (max-width: 640px) {
   .container {
-    width: 300px;
-    margin: 0 auto;
+    width: 300px;    
     padding: 0;
   }    
   
@@ -169,19 +166,16 @@ ul {
   .wild-park__buttons {
     width: 215px;
   }
-  .btn:last-child {
+  .wild-park-btn:last-child {
     display: none;
-  }
+  } 
 }
 @media (max-width: 640px) {
   .wild-park__buttons {
     width: 215px;
     align-self:center;
   }
-  .btn:last-child {
-    display: none;
-  }
-  
+    
 }
 
 @media (max-width: 1200px) {
