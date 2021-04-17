@@ -1,0 +1,361 @@
+.famous-pets {
+  background-color: #D9E8FF;
+}
+
+.famous-pets-row {
+  padding: 100px 0;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .famous-pets-row {
+    padding: 60px 0 80px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.famous-pets-row__text {
+  padding: 220px 0 0 0;
+  margin: 0 43px 0 0;
+  width: 325px;
+  flex: 0 0 auto;
+}
+@media (max-width: 1918px) {
+  .famous-pets-row__text {    
+    width: 215px;
+    padding: 125px 0 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .famous-pets-row__text {    
+    width: 189px;
+    text-align: center;
+    margin: 0 0 70px 0;
+    padding: 0 0 0 0;
+  }
+}
+@media (max-width: 640px) {
+  .famous-pets-row__text {  
+    margin: 0 0 50px 0;
+    padding: 0 0 0 0;
+  }
+}
+
+.section-header__famous {}
+.section_description__famous {
+  margin: 50px 0 55px 0;
+}
+@media (max-width: 1918px) {
+  .section_description__famous {
+    margin: 50px 0 30px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .section_description__famous {
+    margin: 35px 0 35px 0;
+  }
+}
+@media (max-width: 640px) {
+  .section_description__famous {
+    margin: 30px 0 30px 0;
+  }
+}
+.testimonials-buttons { }
+.testimonials-arrow { }
+.testimonials-arrow-img { }
+
+
+
+/*--------------Gallery------------------------------------------*/
+.famous-pets-row__gallery {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* width: 1064px; */
+  /* overflow: hidden; */
+  display: grid;
+  grid-gap: 40px 40px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1918px) {
+  .famous-pets-row__gallery {    
+    grid-gap: 30px 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1200px) {
+  .famous-pets-row__gallery {    
+    grid-gap: 30px 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .famous-pets-row__gallery {    
+    grid-gap: 20px 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1918px) {
+  .famous-pets-item:nth-child(3n) {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .famous-pets-item:nth-child(3n) {
+    display: flex;
+  }
+}
+@media (max-width: 640px) {
+  .famous-pets-item:nth-child(3n) {
+    display: none;
+  }
+}
+
+.famous-pets-item {
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 328px;
+  height: 328px;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 1918px) {
+  .famous-pets-item {
+    width: 258px;
+    height: 258px;
+  }
+  .gallery_img {
+    width: 258px;
+    height: 258px;
+  }
+}
+@media (max-width: 1200px) {
+  .famous-pets-item {
+    width: 180px;
+    height: 180px;
+  }
+  .gallery_img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 640px) {
+  .famous-pets-item {
+    width: 140px;
+    height: 140px;
+  }
+  .gallery_img {
+    width: 140px;
+    height: 140px;
+  }
+}
+/*
+.famous-pets-item:not(:nth-child(3n)) {
+  margin-right: 40px;
+}
+.famous-pets-item:nth-child(-n + 3) {
+  margin-bottom: 40px;
+}
+@media (max-width: 1918px) {
+  .famous-pets-item:not(:nth-child(odd)) {
+    margin-right: 40px;
+  }
+  .famous-pets-item:nth-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .famous-pets-item:not(:nth-child(3n)) {
+    margin-right: 30px;    
+  }
+  .famous-pets-item:nth-child(-n + 3) {
+    margin-bottom: 30px;    
+  }
+  
+}
+
+@media (max-width: 640px) {
+  .famous-pets-item:not(:nth-child(odd)) {
+    margin-right: 20px;
+  }
+  .famous-pets-item:nth-child(-n + 2) {
+    margin-bottom: 20px;
+  }
+}
+*/
+
+.gallery_img {
+  position: absolute;  
+}
+.famous-pets-item:hover .gallery_img {
+  transform: scale(1.1);
+  filter: blur(1px) brightness(0.85);
+}
+.gallery-circle { 
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #fcfcfc; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 0 43px 0;  
+}
+@media (max-width: 1918px) {
+  .gallery-circle {    
+    width: 59px;
+    height: 59px;
+    margin: 0 0 43px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery-circle {    
+    width: 41px;
+    height: 41px;
+    margin: 0 0 18px 0;
+  }
+}
+@media (max-width: 640px) {
+  .gallery-circle {    
+    width: 31px;
+    height: 31px;
+    margin: 0 0 16px 0;
+  }
+}
+.famous-pets-item:hover .gallery-circle {
+  width: 238px;
+  height: 238px;
+  margin: 0 0 14px 0;
+  transition: all 0.2s;
+}
+@media (max-width: 1918px) {
+  .famous-pets-item:hover .gallery-circle {
+    width: 184px;
+    height: 184px;
+    margin: 0 0 12px 0;    
+  }
+}
+@media (max-width: 1200px) {
+  .famous-pets-item:hover .gallery-circle {
+    width: 129px;
+    height: 129px;
+    margin: 0 0 8px 0;    
+  }
+}
+@media (max-width: 640px) {
+  .famous-pets-item:hover .gallery-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 6px 0;    
+  }
+}
+.circle-plus {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 145%;  
+  color: #FCFCFC;
+  opacity: 0.8;
+}
+@media (max-width: 1918px) {
+  .circle-plus {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .circle-plus {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .circle-plus {
+    font-size: 18px;
+  }
+}
+.famous-pets-item:hover .circle-plus {
+  display: none;  
+}
+.circle-country {
+  position: absolute;
+  top: 200px;  
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 154%;   
+  color: #FCFCFC;
+  max-width: 100%;
+  height: 239px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 1918px) {
+  .circle-country {
+    font-size: 16px;
+    height: 185px;
+  }
+}
+@media (max-width: 1200px) {
+  .circle-country {
+    font-size: 14px;
+    height: 128px;
+  }
+}
+@media (max-width: 640px) {
+  .circle-country {
+    font-size: 12px;
+    height: 99px;
+  }
+}
+.famous-pets-item:hover .circle-country {  
+  top: 0;
+  transition: all 0.5s;
+}
+.name-follow {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;  
+  color: #FCFCFC;
+  opacity: 0.8;
+  margin: 0 0 25px 0;
+}
+@media (max-width: 1918px) {
+  .name-follow {
+    margin: 0 0 19px 0;    
+  }
+} 
+@media (max-width: 1200px) {
+  .name-follow {
+    margin: 0 0 10px 0;    
+  }
+} 
+@media (max-width: 640px) {
+  .name-follow {
+    margin: 0 0 7px 0;    
+  }
+} 
+.famous-pets-item:hover .name-follow__name {
+  display: none;
+}
+.name-follow__follow {
+  display: none;
+  text-decoration: none;
+  color: #FCFCFC;
+}
+.famous-pets-item:hover .name-follow__follow {
+  display: block;
+}
