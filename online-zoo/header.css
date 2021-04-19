@@ -98,3 +98,7 @@
     display: block;
   }
 }
+
+.page-marker {
+  font-weight: 600;
+}

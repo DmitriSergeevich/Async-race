@@ -6,8 +6,7 @@
   width: 1688px;
   margin: 0 auto;
   padding: 100px 0 100px 128px;
-  position: relative;
-  text-align: center;
+  position: relative;  
 }
 @media (max-width: 1918px) {
   .container__pay-feed {
@@ -19,7 +18,8 @@
   .container__pay-feed {
     width: 640px;
     margin: 0 auto;
-    padding: 80px 20px 100px 20px;    
+    padding: 80px 20px 100px 20px;  
+    text-align: center;  
   }
 }
 @media (max-width: 640px) {

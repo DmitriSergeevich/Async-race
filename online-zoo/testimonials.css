@@ -202,8 +202,19 @@
 .testimonials-person {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
+@media (max-width: 1920px) {
+.testimonials-person {    
+  margin-bottom: 25px;
+  }
+}
+@media (max-width: 640px) {
+.testimonials-person {    
+  margin-bottom: 20px;
+  }
+}
+
 .person-name {
   font-family: Rubik;
   font-style: normal;

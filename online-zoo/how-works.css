@@ -109,42 +109,7 @@
     order: 2;
   }
 }
-.section_description {
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 145%;
-  color: #080029;
-}
-@media (max-width: 1918px) {
-  .section_description {
-    font-size: 28px;
-  }
-}
-@media (max-width: 640px) {
-  .section_description {
-    font-size: 20px;
-  }
-}
-.section_postscription {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 154%;  
-  color: #747474;
-} 
-@media (max-width: 1918px) {
-  .section_postscription {
-    font-size: 16px;  
-  }
-}
-@media (max-width: 640px) {
-  .section_postscription {
-    font-size: 14px;  
-  }
-}
+
 .section-header__how {
   margin: 0 0 50px 0;
 }

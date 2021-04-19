@@ -5,6 +5,7 @@
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none outside none;
   padding: 0;
@@ -43,8 +44,7 @@ ul {
 }
 @media (max-width: 1918px) {
   .container {
-    width: 1120px;
-    
+    width: 1120px;    
     padding: 0 0 0 144px;
   }
 }
@@ -149,7 +149,42 @@ ul {
 .section-header__park {
   margin: 0 0 28px 0;
 }
-.section_description { }
+.section_description {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 145%;
+  color: #080029;
+}
+@media (max-width: 1918px) {
+  .section_description {
+    font-size: 28px;
+  }
+}
+@media (max-width: 640px) {
+  .section_description {
+    font-size: 20px;
+  }
+}
+.section_postscription {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 154%;  
+  color: #747474;
+} 
+@media (max-width: 1918px) {
+  .section_postscription {
+    font-size: 16px;  
+  }
+}
+@media (max-width: 640px) {
+  .section_postscription {
+    font-size: 14px;  
+  }
+}
 .section_description__park { }
 .wild-park__buttons {
   display: flex;
