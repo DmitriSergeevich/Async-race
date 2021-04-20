@@ -10,16 +10,16 @@
       padding: 0 0 0 144px;
     }
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     .animal-container {
-      width: 640px;    
+      width: 639px;    
       padding: 0 20px 0 20px;
     }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .animal-container {
       width: 320px;    
-      padding: 10;
+      padding: 10px;
     }
   }
   /*------------------------------------ASIDE-------------------------------------*/
@@ -64,13 +64,13 @@
     padding: 140px 0 40px 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main-cam {
     padding: 143px 0 50px 0;
     margin: 0 auto;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .main-cam {
     padding: 100px 0 40px 0;
   }
@@ -91,7 +91,7 @@
     grid-template-columns: 545px 431px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main-cam__grid {
     grid-template-rows: 74px 218px 290px;
     grid-template-columns: 390px 210px;
@@ -101,7 +101,7 @@
     "donate donate";
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .main-cam__grid {
     grid-template-rows: 64px 168px 238px;
     grid-template-columns: 300px;
@@ -130,13 +130,13 @@
     height: 307px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main-video-size {
     width: 390px;
     height: 218px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .main-video-size {
     width: 300px;
     height: 168px;
@@ -146,7 +146,7 @@
   padding: 0 0 0 30px;  
   grid-area: info;  
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .animal__info {
     padding: 0 0 0 0;  
      
@@ -161,7 +161,7 @@
     padding: 20px 0 0 30px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .animal__text {
     padding: 50px 0 0 0;
   }
@@ -170,12 +170,12 @@
   grid-area: cams;
   padding: 60px 0 0 0;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .other-cams {
     padding: 22px 0 0 30px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .other-cams {
     padding: 20px 0 0 0;
   }
@@ -195,13 +195,13 @@
     height: 59px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .animal-info-container {    
     width: 390px;
     height: 54px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .animal-info-container {    
     width: 100%;
     height: 54px;
@@ -240,13 +240,13 @@
     line-height: 24px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .translation-place {
     font-size: 16px;
     line-height: 19px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .translation-place {
     font-size: 14px;
     line-height: 17px;
@@ -268,13 +268,13 @@
     line-height: 25px;
   }
 }
-@media (max-width: 1200px) {  
+@media (max-width: 1199px) {  
   .watching-now {
     font-size: 14px;
     line-height: 22px;
   } 
 }
-@media (max-width: 640px) {  
+@media (max-width: 639px) {  
   .watching-now {
     font-size: 12px;
     line-height: 19px;
@@ -289,12 +289,12 @@
     width: 373px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .animal__text {
     width: 370px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .animal__text {
     width: 300px;
   }
@@ -313,7 +313,7 @@
     line-height: 32px;
   }
 }
-@media (max-width: 640px) {  
+@media (max-width: 639px) {  
   .animal-description{
     font-size: 20px;
     line-height: 29px;
@@ -335,12 +335,12 @@
     margin: 15px 0;
   }
 }
-@media (max-width: 1200px) {  
+@media (max-width: 1199px) {  
   .animal-postscription {  
     margin: 20px 0 30px 0;
   }
 }
-@media (max-width: 640px) {  
+@media (max-width: 639px) {  
   .animal-postscription {
     font-size: 14px;
     line-height: 22px;
@@ -365,7 +365,7 @@
     line-height: 32px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .other-cam__title{
     font-size: 20px;
     line-height: 29px;
@@ -389,7 +389,7 @@
     margin: 30px 0 0px 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .cam-slider {
     flex-direction: column;    
     width: 180px;    
@@ -397,7 +397,7 @@
     height: 218px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .cam-slider {
     flex-direction: row;    
     width: 300px;    
@@ -424,13 +424,13 @@
        
   }  
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .cam-slider__arrows {    
     display: none;
     margin-top: 30px;    
   }  
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .cam-slider__arrows {    
     display: flex;
   }   
@@ -460,13 +460,13 @@
     height: 144px;
   }
 }
-@media (max-width: 1200px) {  
+@media (max-width: 1199px) {  
   .other-cam__video {
     width: 180px;
     height: 102px;
   }
 }
-@media (max-width: 640px) {  
+@media (max-width: 639px) {  
   .other-cam__video {
     width: 141px;
     height: 80px;
@@ -492,7 +492,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .video {    
     width: 180px; 
     height: 102px; 
@@ -501,7 +501,7 @@
     display: none;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .video {    
     width: 141px; 
     height: 80px; 
@@ -530,13 +530,13 @@
     height: 144px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .other-cam__mask {    
     width: 180px;
     height: 102px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .other-cam__mask {    
     width: 131px;
     height: 80px;
@@ -558,13 +558,13 @@
     line-height: 29px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .mask__on-line {
     font-size: 18px;
     line-height: 25px;
 }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .mask__on-line {
     font-size: 16px;
     line-height: 20px;
@@ -585,13 +585,13 @@
     line-height: 23px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .mask__under-line {
     font-size: 16px;
     line-height: 20px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .mask__under-line {
     font-size: 14px;
     line-height: 17px;
@@ -615,13 +615,13 @@
     line-height: 53px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .interesting-title {
     font-size: 26px;
     line-height: 38px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .interesting-title {
     font-size: 20px;
     line-height: 29px;
@@ -644,14 +644,14 @@
     margin: 30px 0 60px 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .interesting-subtitle {
     font-size: 16px;
     line-height: 25px;
     margin: 20px 0 50px 0;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .interesting-subtitle {
     font-size: 14px;
     line-height: 22px;
@@ -666,12 +666,12 @@
     width: 976px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .facts {
     width: 600px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .facts {
     width: 300px;
   }
@@ -704,13 +704,13 @@
     line-height: 35px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .fact-name {
     font-size: 20px;
     line-height: 29px;
   }
 }
-@media (max-width: 640px) {  
+@media (max-width: 639px) {  
   .fact-name {
     font-size: 18px;
     line-height: 26px;
@@ -739,14 +739,14 @@
     width: 90%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .fact-description {
     font-size: 16px;
     line-height: 24px;
     
   }
 }
-@media (max-width: 640px) {  
+@media (max-width: 639px) {  
   .fact-description {
     font-size: 14px;
     line-height: 22px;

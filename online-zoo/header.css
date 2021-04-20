@@ -4,7 +4,7 @@
   width: 100%;
   padding: 25px 00px 0 00px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header {
     padding: 0 0 0 0;
   }
@@ -23,7 +23,7 @@
     
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header-container {
     width: 100%;
     padding: 0 0 0 0;
@@ -37,7 +37,7 @@
   border: 2px solid #f0f0f0;
   padding: 0 0 0 94px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header-items {
     width: 100%;
     height: 88px; 
@@ -80,7 +80,7 @@
   display: none;
   margin: 0 0 0 20px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .header-logo {
     display: block;
   }
@@ -93,7 +93,7 @@
   display: none;
   margin: 0 20px 0 0;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .burger {
     display: block;
   }

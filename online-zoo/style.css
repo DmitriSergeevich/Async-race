@@ -27,12 +27,12 @@ ul {
     padding: 153px 0 100px 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .wild-park {
     padding: 148px 0 60px 0;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .wild-park {
     padding: 128px 0 62px 0;
   }
@@ -48,13 +48,13 @@ ul {
     padding: 0 0 0 144px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .container {
-    width: 640px;    
+    width: 639px;    
     padding: 0 20px 0 20px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .container {
     width: 300px;    
     padding: 0;
@@ -65,7 +65,7 @@ ul {
   display: flex;
   justify-content: space-between;
  }
- @media (max-width: 640px) {
+ @media (max-width: 639px) {
   .wild-park__item {
     display: block;
       
@@ -82,12 +82,12 @@ ul {
     padding: 40px 0 0 0;
   }
  }
- @media (max-width: 1200px) {
+ @media (max-width: 1199px) {
   .wild-park__text {
     padding: 8px 0 0 0;
   }
  }
- @media (max-width: 640px) {
+ @media (max-width: 639px) {
   .wild-park__text {
     text-align: center;
     width: 299px;
@@ -117,7 +117,7 @@ ul {
     line-height: 70px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .wild-park__watch {
     font-size: 42px;
     line-height: 53px;
@@ -135,13 +135,13 @@ ul {
     height: 456px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .wild-park__img {
     width: 263px;
     height: 326px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .wild-park__img {
     display: none;    
   }
@@ -162,7 +162,7 @@ ul {
     font-size: 28px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .section_description {
     font-size: 20px;
   }
@@ -180,7 +180,7 @@ ul {
     font-size: 16px;  
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .section_postscription {
     font-size: 14px;  
   }
@@ -198,7 +198,7 @@ ul {
     width: 475px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .wild-park__buttons {
     width: 215px;
   }
@@ -206,7 +206,7 @@ ul {
     display: none;
   } 
 }
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .wild-park__buttons {
     width: 215px;
     align-self:center;
@@ -214,7 +214,7 @@ ul {
     
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .off {
     display: none;
   }  
