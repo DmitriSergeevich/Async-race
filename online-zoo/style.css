@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none outside none;
+  padding: 0;
+  margin: 0;
+}
+.main {
+  background-color: #fcfcfc;
+  
+}
+.content {
+  /* margin: 25px 0 0 0; */
+  position: relative;
+}
+.wild-park {
+  padding: 170px 0 27px 0;
+}
+@media (max-width: 1918px) {
+  .wild-park {
+    padding: 153px 0 100px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .wild-park {
+    padding: 148px 0 60px 0;
+  }
+}
+@media (max-width: 639px) {
+  .wild-park {
+    padding: 128px 0 62px 0;
+  }
+}
+.container {
+  width: 1432px;
+  margin: 0 auto;
+  /* flex: 0 0 auto; */
+}
+@media (max-width: 1918px) {
+  .container {
+    width: 1120px;    
+    padding: 0 0 0 144px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 639px;    
+    padding: 0 20px 0 20px;
+  }
+}
+@media (max-width: 639px) {
+  .container {
+    width: 300px;    
+    padding: 0;
+  }    
+  
+}
+.wild-park__item {
+  display: flex;
+  justify-content: space-between;
+ }
+ @media (max-width: 639px) {
+  .wild-park__item {
+    display: block;
+      
+  }
+}
+.wild-park__text {
+  padding: 75px 0 0 0;
+  width: 697px;
+  display: flex;
+  flex-direction: column;
+ }
+ @media (max-width: 1918px) {
+  .wild-park__text {
+    padding: 40px 0 0 0;
+  }
+ }
+ @media (max-width: 1199px) {
+  .wild-park__text {
+    padding: 8px 0 0 0;
+  }
+ }
+ @media (max-width: 639px) {
+  .wild-park__text {
+    text-align: center;
+    width: 299px;
+    align-items: center;
+  }
+ }
+.section-header {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #626262;
+}
+.wild-park__watch {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 106px;
+  color: #080029;
+}
+@media (max-width: 1918px) {
+  .wild-park__watch {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 1199px) {
+  .wild-park__watch {
+    font-size: 42px;
+    line-height: 53px;
+    width: 315px;
+  }
+}
+.wild-park__img {
+  width: 696px;
+  height: 673px;
+  border-radius: 5px;
+}
+@media (max-width: 1918px) {
+  .wild-park__img {
+    width: 400px;
+    height: 456px;
+  }
+}
+@media (max-width: 1199px) {
+  .wild-park__img {
+    width: 263px;
+    height: 326px;
+  }
+}
+@media (max-width: 639px) {
+  .wild-park__img {
+    display: none;    
+  }
+}
+.section-header__park {
+  margin: 0 0 28px 0;
+}
+.section_description {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 145%;
+  color: #080029;
+}
+@media (max-width: 1918px) {
+  .section_description {
+    font-size: 28px;
+  }
+}
+@media (max-width: 639px) {
+  .section_description {
+    font-size: 20px;
+  }
+}
+.section_postscription {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 154%;  
+  color: #747474;
+} 
+@media (max-width: 1918px) {
+  .section_postscription {
+    font-size: 16px;  
+  }
+}
+@media (max-width: 639px) {
+  .section_postscription {
+    font-size: 14px;  
+  }
+}
+.section_description__park { }
+.wild-park__buttons {
+  display: flex;
+  margin: 57px 0 0 0;
+  justify-content: space-between;
+  width: 575px;
+  padding: 0;
+}
+@media (max-width: 1918px) {
+  .wild-park__buttons {
+    width: 475px;
+  }
+}
+@media (max-width: 1199px) {
+  .wild-park__buttons {
+    width: 215px;
+  }
+  .wild-park-btn:last-child {
+    display: none;
+  } 
+}
+@media (max-width: 639px) {
+  .wild-park__buttons {
+    width: 215px;
+    align-self:center;
+  }
+    
+}
+
+@media (max-width: 1199px) {
+  .off {
+    display: none;
+  }  
+}
+.btn {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #FCFCFC;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 75px;
+  height: 61px;
+  cursor: pointer;
+  border: #0F0049;
+  border-radius: 5px;
+  border: 2px solid #0F0049;
+  
+}
+@media (max-width: 1918px) {
+  .btn {
+    line-height: 50px;
+    height: 51px;
+    font-size: 16px;
+    padding: 0 60px;
+  }
+}
+.btn__blue {
+  color: #FCFCFC;
+  background-color: #080049;
+  
+}
+.btn__white {
+  color: #080029;
+}
