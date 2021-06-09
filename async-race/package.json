@@ -1,14 +1,14 @@
 {
-  "name": "empty_project",
+  "name": "async-race",
   "version": "0.0.0",
-  "description": "Empty project template",
+  "description": "study project",
   "private": true,
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --env development",
     "lint": "eslint src"
   },
-  "author": "Kris Casper",
+  "author": "Dmitry Sergeevich",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",

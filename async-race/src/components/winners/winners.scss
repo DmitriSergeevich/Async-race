@@ -1,0 +1,32 @@
+.page-winners {
+  margin-top: 50px;
+}
+.winners-pages{
+  display: flex;
+  width: 300px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort {
+  margin-top: 30px;
+  color: rgb(224, 219, 219);
+  width: 600px;
+}
+.sort tr {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.15px;
+}
+.sort td {
+  text-align: center;
+
+}
+.table-car {
+  width: 50px;
+  margin: 0 auto;
+}

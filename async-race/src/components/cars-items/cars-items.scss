@@ -1,0 +1,34 @@
+.cars-items {
+  margin-top: 30px;
+  background-image: url("/src/Frame.png");
+  background-size: cover;
+  width: 100%;
+
+
+}
+.cars-buttons {
+  display: flex;
+  width: 300px;
+  height: 35px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, .7);
+  align-items: center;
+}
+.track {
+  display: flex;
+  height: 50px;
+  /* border-bottom: 1px dashed rgb(248, 247, 247); */
+}
+.track-buttons {
+  margin-right: 10px;
+}
+
+.car{
+  width: 80px;
+}
+.finish {
+  position: relative;
+  width: 50px;
+  left: calc(100% - 390px);
+}
