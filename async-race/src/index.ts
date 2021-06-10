@@ -3,6 +3,7 @@ import header from './components/header/header'
 import garage from './components/garage/garage'
 import winners from './components/winners/winners'
 import listen from './components/listen/listen'
+import { carsCount, getPageGarage } from './components/response/response'
 
 const body = document.querySelector('body')
 const main = document.createElement('main')
@@ -13,9 +14,20 @@ garage()
 winners()
 header()
 listen()
+getPageGarage('1')
+carsCount()
+// const updateURL = 'http://127.0.0.1:3000/garage/'
+//     const car = {
+//       name: updateTetext?.value,
+//       color: updatetColor?.value,
+//     }
+//     const dataCar: object = {
+//       method: 'PUT',
+//       body: JSON.stringify(car),
+//       headers: {'Content-Type': 'application/json'}
+//     }
 
-
-
+//   response(updateURL, dataCar).then(response => {return response.json()}).then(
 
 
 

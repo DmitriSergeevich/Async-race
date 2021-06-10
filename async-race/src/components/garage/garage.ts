@@ -25,9 +25,9 @@ export default function garage() {
       </form>
     </section>
     <section class="garage">
-      <h2>Garage (<span id="carsCount">654984</span>)</h2>
+      <h2>Garage (<span id="carsCount"></span>)</h2>
       <div class="cars-pages">
-        <h3>Page #<span id="garagePageNum">6</span></h3>
+        <h3>Page #<span id="garagePageNum">1</span></h3>
         <input type="button" id="prevGarage" class="button button__green" value="< prev">
         <input type="button" id="nextGarage" class="button button__green" value="next >">
       </div>
