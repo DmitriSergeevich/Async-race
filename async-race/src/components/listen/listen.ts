@@ -1,5 +1,5 @@
 
-import {createCar, updateCar, changeGaragePage, deleteCar } from '../response/response'
+import {createCar, updateCar, changeGaragePage, generateCars } from '../response/response'
 
 export default function listen() {
   const buttonInputs = document.querySelectorAll('input[type="button"]')
@@ -42,7 +42,7 @@ const buttonHandler = (event: any) => {
     break;
     case 'nextGarage': changeGaragePage(0);
     break;
-    
+    case 'generate' : generateCars();
     default:
       break
   }

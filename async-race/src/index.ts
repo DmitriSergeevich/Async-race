@@ -3,7 +3,7 @@ import header from './components/header/header'
 import garage from './components/garage/garage'
 import winners from './components/winners/winners'
 import listen from './components/listen/listen'
-import { carsCount, getPageGarage } from './components/response/response'
+import { carsCount, getPageGarage} from './components/response/response'
 
 const body = document.querySelector('body')
 const main = document.createElement('main')
@@ -16,6 +16,10 @@ header()
 listen()
 getPageGarage('1')
 carsCount()
+
+
+
+
 // const updateURL = 'http://127.0.0.1:3000/garage/'
 //     const car = {
 //       name: updateTetext?.value,

@@ -6,7 +6,7 @@ export default function winners() {
   pageWinners.classList.add('page-winners')
   pageWinners.classList.add('hidden')
   pageWinners.innerHTML= `
-    <h2>Garage (<span id="carsCount">654984</span>)</h2>
+    <h2>Garage (<span id="carsCount"></span>)</h2>
       <div class="winners-pages">
         <h3>Page #<span id="WinnersPageNum">6</span></h3>
         <input type="button" id="prevWinners" class="button button__green" value="prev">

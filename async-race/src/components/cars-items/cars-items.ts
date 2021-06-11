@@ -1,7 +1,12 @@
-
+import {generateCarsData} from '../response/response'
 import './cars-items.scss'
 import { deleteCar, updateCar } from '../response/response'
+
 export default function carsItems(carName: string, carColor: string, id: number) {
+  const carsItemsCount = document.querySelectorAll('.cars-items')
+  if (carsItemsCount.length <= 6) {
+
+
   const carsList = document.querySelector('.cars-list')
   const carsItems = document.createElement('div')
   carsItems.className = 'cars-items'
@@ -32,7 +37,7 @@ export default function carsItems(carName: string, carColor: string, id: number)
       <circle cx="88.3" cy="254.75" r="17.7" fill="#dcdbde" />
       <path
         d="M353.1,237.15H167.7a8.8,8.8,0,0,1-8.8-8.8h0a8.8,8.8,0,0,1,8.8-8.8H353.1a8.8,8.8,0,0,1,8.8,8.8h0A8.8,8.8,0,0,1,353.1,237.15Z"
-        fill='grey' />
+        fill=${generateCarsData().color} />
       <path id="car-color__${id}"
         d="M503.2,237.15h-8.8a8.8,8.8,0,0,1-8.8-8.8h0a8.8,8.8,0,0,1,8.8-8.8h8.8a8.8,8.8,0,0,1,8.8,8.8h0A8.9,8.9,0,0,1,503.2,237.15Z"
         fill=${carColor} />
@@ -95,5 +100,5 @@ export default function carsItems(carName: string, carColor: string, id: number)
   const removeButton = document.querySelector(`#remove_${id}`)
   selectButton?.addEventListener('click', (event) => {updateCar.selectedCar(event)})
   removeButton?.addEventListener('click', (event) => {deleteCar(event)})
-  //removeButton?.addEventListener('click', (event) => {console.log(1656)})
+  }
 }

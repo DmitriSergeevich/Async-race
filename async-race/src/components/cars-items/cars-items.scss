@@ -3,22 +3,21 @@
   background-image: url("/src/Frame.png");
   background-size: cover;
   width: 100%;
-
-
 }
 .cars-buttons {
   display: flex;
-  width: 300px;
+  width: 350px;
   height: 35px;
-  justify-content: space-between;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, .7);
   align-items: center;
 }
+.cars-buttons .button {
+  margin-right: 10px;
+}
 .track {
   display: flex;
   height: 50px;
-  /* border-bottom: 1px dashed rgb(248, 247, 247); */
 }
 .track-buttons {
   margin-right: 10px;

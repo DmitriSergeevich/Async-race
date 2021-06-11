@@ -136,8 +136,42 @@ export const deleteCar = async (event: any) => {
 }
 
 export const carsCount = async () => {
-  const count = document.querySelector('#carsCount')
+  const count = document.querySelectorAll('#carsCount')
   const page = baseURL + garage + `?_page=1&_limit=7`
   const totalCarsNum = await fetch(page).then(response => response.headers.get('X-Total-Count')).catch(err => console.log(err))
-  count!.innerHTML = `${totalCarsNum}`
+  count!.forEach(elem => elem.innerHTML = `${totalCarsNum}`)
+}
+
+export const generateCarsData = () => {
+  const carsBrend = ['Audi', 'BMW', 'Chery', 'Chevrolet', 'Citroen', 'Daewoo', 'Ford', 'Geely', 'Honda', 'Hyundai', 'Kia', 'LADA', 'Land Rover', 'Lexus', 'Lifan', 'Mazda', 'Mercedes',
+    'Mitsubishi', 'Nissan', 'Opel', 'Peugeot', 'Renault', 'Skoda', 'Subaru', 'Suzuki', 'Toyota', 'Volkswagen', 'Volvo', 'УАЗ']
+  const carsModels = ['A6', 'X6', 'Amulet', 'Cruse', 'C4', 'Nexia', 'Mustang', 'Emgrand', 'Civic', 'Solaris', 'Sportage', 'Granta', 'Defender', 'IS250', 'Solano', 'MX-5', 'Maclaren',
+  'Colt', 'GT-R', 'Insignia', 'Partner', 'Duster', 'Oktavia', 'Impresa', 'Vitara', 'Prius', 'Golf', 'XC-70', 'Patriot']
+  const carsColors = ['#24B800','#003C8A','#F07714','#F9F200','#D6003B','#89B802','#05848A','#F03A15','#FABF14','#8F00D6']
+
+  function getRundom(type: String[], max: number ){
+    return type[Math.floor(Math.random() * max)]
+  }
+  const carsData = {
+    name: `${getRundom(carsBrend, 29)} ${getRundom(carsModels, 30)}`,
+    color: `${getRundom(carsColors, 10)}`
+  }
+  return carsData;
+
+}
+
+export const generateCars = async () => {
+  for(let i = 0; i<100; i++) {
+    const dataCar: object = {
+    method: 'POST',
+    body: JSON.stringify(generateCarsData()),
+    headers: {'Content-Type': 'application/json'}
+    }
+
+    await response(baseURL + garage, dataCar)
+    .then(response => {return response.json()})
+    .then(data=>{carsItems(data.name, data.color, data.id)})
+
+  }
+  carsCount()
 }
