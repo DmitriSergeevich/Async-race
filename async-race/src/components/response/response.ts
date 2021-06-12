@@ -1,6 +1,7 @@
 import carsItems from '../cars-items/cars-items'
 const baseURL = 'http://127.0.0.1:3000/'
 const garage = "garage/"
+const engine = "engine"
 let currentPage = 1;
 
 export const response = async (url: string, data?: object) => await fetch(url, data)
@@ -175,3 +176,88 @@ export const generateCars = async () => {
   }
   carsCount()
 }
+
+
+
+
+export class MoveCar {
+  animationID: number
+  id: string
+  step: number| null;
+  trekLength: number;
+  element: HTMLElement | null
+  per: number
+
+  constructor(id: string){
+    this.id = id
+    this.animationID = 0
+    this.trekLength = document.documentElement.clientWidth
+    this.element = document.getElementById(`car__${this.id}`)
+    this.step = 0
+    this.per = 5
+  }
+
+  carRunAnimation(){
+    const animation = () => {
+      this.step!+=this.per
+      this.element!.style.transform = 'translateX(' + this.step + 'px)';
+      if (this.step! < this.trekLength - 250) {
+        this.animationID = window.requestAnimationFrame(animation);
+      }
+    }
+    return ()=>requestAnimationFrame(animation)
+  }
+
+  stopCar(){
+    cancelAnimationFrame(this.animationID)
+    //const element = document.getElementById(`car__${this.id}`);
+    //element!.style.transform = `translateX(0px)`
+  }
+
+
+  startEngine = async () => {
+    //let id = event.target!.id.slice(6)
+    const urlStart = `${baseURL}${engine}?id=${this.id}&status=started`
+    const urlDrive = `${baseURL}${engine}?id=${this.id}&status=drive`
+    //const elem = document.querySelector(`#cars-items__${this.id}`)
+    let params
+    await response(urlStart)
+    .then(response => response.json())
+    //.then(this.carRunAnimation())
+    .then(data => {
+      this.per = Math.floor(data.velocity / 10)
+    })
+    .then(this.carRunAnimation())
+
+    await response(urlDrive)
+    .then(response => {
+      if (response.status === 500){
+      this.stopCar()
+      }
+    })
+  }
+
+  returnCar = () => {
+    cancelAnimationFrame(this.animationID)
+    const element = document.getElementById(`car__${this.id}`);
+    element!.style.transform = `translateX(0px)`
+    this.step! = 0
+  }
+}
+
+//export const raceMode
+
+/*
+export const startEngine = async (event: any) => {
+  let id = event.target!.id.slice(6)
+  const urlStart = `${baseURL}${engine}?id=${id}&status=started`
+  const urlDrive = `${baseURL}${engine}?id=${id}&status=drive`
+  const elem = document.querySelector(`#cars-items__${id}`)
+  let params
+  await response(urlStart)
+  .then(response => response.json())
+  .then(data => params = data)
+  await response(urlDrive).then().catch()
+  carsCount()
+}
+*/
