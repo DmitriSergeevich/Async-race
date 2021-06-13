@@ -1,10 +1,19 @@
 import carsItems from '../cars-items/cars-items'
+import { winnerModal } from '../winner-madal/winner-modal'
 const baseURL = 'http://127.0.0.1:3000/'
 const garage = "garage/"
 const engine = "engine"
 let currentPage = 1;
+let winner = false;
 
-export const response = async (url: string, data?: object) => await fetch(url, data)
+export function winnerSwitcher(count: boolean) {
+  winner = count;
+}
+
+//export const response = async (url: string, data?: object) => await fetch(url, data)
+export async function response(url: string, data?: object){
+  return await fetch(url, data)
+}
 
 export const createCar = async () => {
   const creatTetext: HTMLInputElement | null = document.querySelector('#create-text');
@@ -177,32 +186,58 @@ export const generateCars = async () => {
   carsCount()
 }
 
+const getPosition = (e: HTMLElement | null) => {
+  const coordinates = e!.getBoundingClientRect()
+  return coordinates
+}
+const getDistance = (a: HTMLElement | null, b: HTMLElement | null) => {
+  const aCoordinates = getPosition(a);
+  const bCoordinates = getPosition(b);
+  const aPosition = aCoordinates.left + aCoordinates.width / 2;
+  const bPosition = bCoordinates.left + bCoordinates.width / 2;
+  const distance = bPosition - aPosition;
+  return distance
+}
 
 
 
-export class MoveCar {
+
+export  class MoveCar {
   animationID: number
   id: string
   step: number| null;
   trekLength: number;
   element: HTMLElement | null
   per: number
+  finish: HTMLElement | null
 
   constructor(id: string){
     this.id = id
     this.animationID = 0
-    this.trekLength = document.documentElement.clientWidth
+    //this.trekLength = document.documentElement.clientWidth
     this.element = document.getElementById(`car__${this.id}`)
+    this.finish = document.getElementById(`finish__${id}`)
+    this.trekLength = getDistance(this.element, this.finish) + 320;
     this.step = 0
     this.per = 5
   }
 
   carRunAnimation(){
-    const animation = () => {
+    const animation = async () => {
       this.step!+=this.per
       this.element!.style.transform = 'translateX(' + this.step + 'px)';
       if (this.step! < this.trekLength - 250) {
         this.animationID = window.requestAnimationFrame(animation);
+      } else {
+        if(!winner){
+          winner = true;
+          const time = String(((this.trekLength / this.per) / 60).toFixed(2))
+          await response(`${baseURL}${garage}${this.id}`)
+          .then(response => response.json())
+          .then(data => winnerModal(data.name, time))
+
+        }
+
       }
     }
     return ()=>requestAnimationFrame(animation)
@@ -245,7 +280,24 @@ export class MoveCar {
   }
 }
 
-//export const raceMode
+const winners = () => {
+
+}
+
+export const raceMode = () => {
+  const carsFromPage: any = document.querySelectorAll('.start-button')
+  for (let i = 0; i < carsFromPage.length; i++) {
+    carsFromPage[i].click()
+  }
+}
+export const reset = () => {
+  const carsFromPage: any = document.querySelectorAll('.stop-button')
+  for (let i = 0; i < carsFromPage.length; i++) {
+    carsFromPage[i].click()
+  }
+}
+
+
 
 /*
 export const startEngine = async (event: any) => {

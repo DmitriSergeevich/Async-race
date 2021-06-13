@@ -6,8 +6,6 @@ import { deleteCar, updateCar, } from '../response/response'
 export default function carsItems(carName: string, carColor: string, id: number) {
   const carsItemsCount = document.querySelectorAll('.cars-items')
   if (carsItemsCount.length <= 6) {
-
-
     const carsList = document.querySelector('.cars-list')
     const carsItems = document.createElement('div')
     carsItems.className = 'cars-items'
@@ -86,13 +84,13 @@ export default function carsItems(carName: string, carColor: string, id: number)
     </div>
     <div class="track">
     <div class="track-buttons">
-      <input type="button" id="start_${id}" class="button button__track" value="a">
-      <input type="button" id="stop_${id}" class="button button__track" value="b">
+      <input type="button" id="start_${id}" class="button button__track start-button" value="a">
+      <input type="button" id="stop_${id}" class="button button__track stop-button" value="b">
     </div>
     <div class="car" id="car__${id}">
       ${carSvg}
     </div>
-    <div class="finish">
+    <div class="finish" id="finish__${id}">
       ${finishFlag}
     </div>
     `

@@ -1,0 +1,51 @@
+.receWinner {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1800px;
+  height: 850px;
+  left: calc((100% - 1800px) / 2);
+  top: calc((100% - 850px) / 2);
+  text-align: center;
+  padding: 50px 50px;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 130px;
+
+  color: chartreuse;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black, 4px 4px rgb(57, 235, 3), 6px 6px black, 8px 8px rgb(57, 235, 3), 10px 10px black, 12px 12px rgb(57, 235, 3), 14px 14px black, 16px 16px rgb(57, 235, 3), 18px 18px black, 20px 20px rgb(57, 235, 3), 22px 22px black, 24px 24px rgb(57, 235, 3), 26px 26px black;
+
+}
+
+@media (max-width: 1918px) {
+  .receWinner {
+    width: 1000px;
+    height: 650px;
+    left: calc((100% - 1000px) / 2);
+    top: calc((100% - 700px) / 2);
+    font-size: 80px;
+    text-shadow: 2px 2px black, 4px 4px rgb(57, 235, 3), 6px 6px black, 8px 8px rgb(57, 235, 3), 10px 10px black, 12px 12px rgb(57, 235, 3), 14px 14px black, 16px 16px rgb(57, 235, 3), 18px 18px black, 20px 20px rgb(57, 235, 3), 22px 22px black;
+  }
+}
+@media (max-width: 1198px) {
+  .receWinner {
+    width: 600px;
+    height: 300px;
+    left: calc((100% - 600px) / 2);
+    top: calc((100% - 300px) / 2);
+    font-size: 30px;
+    text-shadow: 1px 1px black, 2px 2px rgb(57, 235, 3), 3px 3px black, 4px 4px rgb(57, 235, 3), 5px 5px black, 6px 6px rgb(57, 235, 3), 7px 7px black;
+  }
+}
+@media (max-width: 638px) {
+  .receWinner {
+    width: 300px;
+    height: 200px;
+    left: calc((100% - 300px) / 2);
+    top: calc((100% - 200px) / 2);
+    font-size: 12px;
+    text-shadow: 1px 1px black, 2px 2px rgb(57, 235, 3), 3px 3px black;
+  }
+}

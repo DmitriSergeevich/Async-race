@@ -6,7 +6,7 @@
 }
 .cars-buttons {
   display: flex;
-  width: 350px;
+  width: fit-content;
   height: 35px;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, .7);
@@ -22,7 +22,6 @@
 .track-buttons {
   margin-right: 10px;
 }
-
 .car{
   width: 80px;
 }
