@@ -3,7 +3,7 @@ import './winner-modal.scss'
 
 export function winnerModal(name: string, time: string) {
   const garagePage = document.querySelector('.page-garage')
-  const body = document.querySelector('body')
+  //const body = document.querySelector('body')
   const receWinner = document.createElement('div')
   receWinner.classList.add('receWinner')
   receWinner.innerHTML = `
@@ -11,10 +11,10 @@ export function winnerModal(name: string, time: string) {
     <span>${name}</span><br>
     <br>
     <span>Its time:</span><br>
-    <span>${time} сек</span>
+    <span>${time} sek</span>
   `
   garagePage?.append(receWinner)
-  body?.addEventListener('click', () => {
+  receWinner?.addEventListener('click', () => {
     garagePage!.removeChild(receWinner)
     winnerSwitcher(false)
   })

@@ -1,19 +1,19 @@
 import './garage.scss';
 
 export default function garage() {
-  const main = document.querySelector('main')
-  const pageGarage = document.createElement('div')
-  pageGarage.classList.add('page-garage')
-  pageGarage.innerHTML= `
+  const main = document.querySelector('main');
+  const pageGarage = document.createElement('div');
+  pageGarage.classList.add('page-garage');
+  pageGarage.innerHTML = `
     <section class="controls">
       <form>
         <div class="input-items">
-          <input type="text" id="create-text" class="input-text" maxlength="10" minlength="1" required>
+          <input type="text" id="create-text" class="input-text" maxlength="20" minlength="1" required>
           <input type="color" class="input-color" id="createColor" name="createColor" value="#ffffff">
           <input type="button" id="create" class="button button__blue" value="create">
         </div>
         <div class="input-items">
-          <input type="text" id="update-text" class="input-text" maxlength="10" minlength="1" required>
+          <input type="text" id="update-text" class="input-text" maxlength="20" minlength="1" required>
           <input type="color" id="updateColor" name="updateColor" value="#ffffff">
           <input type="button" id="update" class="button button__blue" value="update">
         </div>
@@ -34,6 +34,6 @@ export default function garage() {
       <div id="carsList" class="cars-list">
       </div>
     </section>
-  `
-  main?.appendChild(pageGarage)
+  `;
+  main?.appendChild(pageGarage);
 }

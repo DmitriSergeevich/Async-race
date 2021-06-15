@@ -30,3 +30,12 @@
   width: 50px;
   margin: 0 auto;
 }
+.sortType {
+  cursor: pointer;
+
+}
+
+.rotated-arrow {
+  transform: rotate(180deg);
+  position: absolute;
+}
