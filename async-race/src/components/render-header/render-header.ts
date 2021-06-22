@@ -1,12 +1,12 @@
-export default function header() {
+export default function header(): void {
   const body = document.querySelector('body');
-  const header = document.createElement('header');
+  const headerElement = document.createElement('header');
 
-  header.innerHTML = `
+  headerElement.innerHTML = `
     <div class="header-wrapper">
       <input type="button" id="toGarage" class="button button__green" value="to garage">
       <input type="button" id="toWinners" class="button button__green" value="to winners">
     </div>
   `;
-  body?.prepend(header);
+  body?.prepend(headerElement);
 }

@@ -1,7 +1,13 @@
-import { renderCar } from '../car/car';
-import './winners.scss';
+import { renderCar } from '../render-cars-items/car';
+import './render-winners.scss';
 
-export default function winners() {
+interface IWinners {
+  id: number,
+  wins: number,
+  time: number,
+}
+
+export default function renderWinners(): void {
   const main = document.querySelector('main');
   const pageWinners = document.createElement('div');
   pageWinners.classList.add('page-winners');
@@ -29,10 +35,10 @@ export default function winners() {
   main?.appendChild(pageWinners);
 }
 
-export async function renderWinnersItems(winnersData: any) {
+export async function renderWinnersItems(winnersData: IWinners): Promise<void> {
   const carData = await fetch(`http://127.0.0.1:3000/garage/${winnersData.id}`)
-  .then((response) => response.json())
-  .then((data) => data)
+    .then((response) => response.json())
+    .then((data) => data);
   const tableBody = document.querySelector('#tableBody');
   const winnersRow = document.createElement('tr');
   winnersRow.classList.add('winners-row');

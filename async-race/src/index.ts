@@ -1,21 +1,26 @@
 import './styles.scss';
-import header from './components/header/header';
-import garage from './components/garage/garage';
-import winners from './components/winners/winners';
-import listen from './components/listen/listen';
+import header from './components/render-header/render-header';
+import garage from './components/render-garage/render-garage';
+import renderWinners from './components/render-winners/render-winners';
+import listen from './components/listeners/listeners';
 import {
-  carsCount, getPageGarage, upLoadWinnersList, winnersCount
+  carsCount, getPageGarage, upLoadWinnersList, winnersCount,
 } from './components/response/response';
 
 const body = document.querySelector('body');
 const main = document.createElement('main');
 body?.appendChild(main);
+const firsPage = '1';
 
-garage();
-winners();
-upLoadWinnersList();
-header();
-listen();
-getPageGarage('1');
-carsCount();
-winnersCount();
+function initPage() {
+  garage();
+  renderWinners();
+  upLoadWinnersList();
+  header();
+  listen();
+  getPageGarage(firsPage);
+  carsCount();
+  winnersCount();
+}
+
+initPage();
